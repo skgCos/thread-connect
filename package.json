@@ -6,6 +6,7 @@
   "main": "dist/thread-connect.js",
   "module": "dist/thread-connect.mjs",
   "typings": "dist/thread-connect.d.ts",
+  "license": "GNU",
   "scripts": {
     "start": "PRODUCTION=1 node dist/app.js",
     "dev": "DEV=1 node dist/app.js",
