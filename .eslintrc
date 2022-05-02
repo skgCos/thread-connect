@@ -1,0 +1,35 @@
+{
+	"root": true,
+	"extends": [
+		"standard-with-typescript"
+	],
+	"parserOptions": {
+        "project": "./tsconfig.json"
+    },
+	"rules": {
+		"@typescript-eslint/no-var-requires": 0,
+  		"@typescript-eslint/indent": ["error", 4],
+		"@typescript-eslint/quotes": ["error", "double"],
+  		"@typescript-eslint/semi": ["error", "always"],
+		"@typescript-eslint/keyword-spacing": ["error", { "overrides": {
+			"if": { "after": false },
+			"for": { "after": false },
+			"while": { "after": false }
+		}}],
+		"@typescript-eslint/member-delimiter-style": ["error", {
+			"multiline": {
+				"delimiter": "semi",
+				"requireLast": true
+			},
+			"singleline": {
+				"delimiter": "semi",
+				"requireLast": true
+			},
+			"multilineDetection": "brackets"
+		}],
+		"@typescript-eslint/array-type": ["error", {"default": "generic"}],
+		"@typescript-eslint/space-before-function-paren": ["error", "never"],
+		"object-curly-spacing": ["error", "never"]
+
+	}
+}
